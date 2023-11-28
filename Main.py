@@ -48,12 +48,6 @@ async def ask(ctx, *, question):
 def query(payload):
     response = requests.post(API_URL, headers=HEADERS, json=payload)
     return response.json()
-
-
-def query(payload):
-    response = requests.post(API_URL, headers=HEADERS, json=payload)
-    return response.json()
-
-
+    
 # Run the bot
 bot.run(TOKEN)
